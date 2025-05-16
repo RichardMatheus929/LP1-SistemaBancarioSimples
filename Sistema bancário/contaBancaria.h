@@ -14,7 +14,7 @@ private:
 
 public:
 
-    ContaBancaria(int numeroConta, Cliente cliente, double saldoInicial = 0);
+    ContaBancaria(int numeroConta, Cliente cliente, double saldoInicial = 0.0);
 
     void depositar(double valorDeposito);
     bool sacar(double valor); // Lembrar de verificar se há saldo suficiente

@@ -8,12 +8,7 @@ using namespace std;
 ContaBancaria::ContaBancaria(int numeroConta, Cliente cliente, double saldoInicial) {
     this->numeroConta = numeroConta;
     this->cliente = cliente;
-    if (saldoInicial > 0) { // Só adiciona saldo inicial se ele for maior que 0
-        this->saldoConta = saldoInicial;
-    }
-    else {
-        this->saldoConta = 0;
-    }
+    this-> saldoConta = saldoInicial;
 };
 
 void ContaBancaria::depositar(double valorDeposito) {
