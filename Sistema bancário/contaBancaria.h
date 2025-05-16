@@ -18,8 +18,8 @@ public:
 
     void depositar(double valorDeposito);
     bool sacar(double valor); // Lembrar de verificar se há saldo suficiente
-    void transferir(double valor, ContaBancaria conta);
-    void transferir(double valor, ContaBancaria conta1, ContaBancaria conta2);
+    void transferir(double valor, ContaBancaria& conta);
+    void transferir(double valor, ContaBancaria& conta1, ContaBancaria& conta2);
     void exibirSaldo();
     void exibirInformacoes();
 
