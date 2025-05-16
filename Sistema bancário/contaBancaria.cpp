@@ -33,9 +33,14 @@ void ContaBancaria::transferir(double valor, ContaBancaria conta) {
     if (this->sacar(valor)){
         conta.depositar(valor);
     }
+
+    cout << "Transferido " << valor << " para a conta " << conta.numeroConta << endl;
 };
 
 void ContaBancaria::transferir(double valor, ContaBancaria conta1, ContaBancaria conta2) {
+
+    valor = valor / 2; // Assim eu divido o valor de transferência para as duas contas
+
     if (this->sacar(valor)) {
         conta1.depositar(valor);
     }
@@ -43,6 +48,8 @@ void ContaBancaria::transferir(double valor, ContaBancaria conta1, ContaBancaria
     if (this->sacar(valor)) {
         conta2.depositar(valor);
     }
+
+    cout << "Transferido " << valor << " para as contas (" << conta1.numeroConta << "," << conta2.numeroConta << ")" << endl;
 };
 
 void ContaBancaria::exibirSaldo() {
