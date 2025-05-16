@@ -17,7 +17,7 @@ ContaBancaria::ContaBancaria(int numeroConta, Cliente cliente, double saldoInici
 };
 
 void ContaBancaria::depositar(double valorDeposito) {
-    this->saldoConta = valorDeposito;
+    this->saldoConta += valorDeposito;
 };
 
 // O retorno booleano permite eu usar essa função na funcionalidade de transferir
