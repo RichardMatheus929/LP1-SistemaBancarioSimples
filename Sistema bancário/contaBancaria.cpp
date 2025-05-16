@@ -1,6 +1,7 @@
 #include "contaBancaria.h"
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // Contrutor
@@ -9,6 +10,9 @@ ContaBancaria::ContaBancaria(int numeroConta, Cliente cliente, double saldoInici
     this->cliente = cliente;
     if (saldoInicial > 0) { // Só adiciona saldo inicial se ele for maior que 0
         this->saldoConta = saldoInicial;
+    }
+    else {
+        this->saldoConta = 0;
     }
 };
 
